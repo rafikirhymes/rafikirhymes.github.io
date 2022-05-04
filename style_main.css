@@ -18,8 +18,8 @@ nav {
 
 .nav-bar {
   display: inline-block;
-  color: #fff
-  padding: 0
+  color: #fff;
+  padding: 0 5;
 }
 
 .nav-links {
