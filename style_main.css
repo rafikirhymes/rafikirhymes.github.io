@@ -29,6 +29,20 @@ nav {
   text-align: center
 }
 
+.nav-links a {
+  cursor: pointer;
+}
+
+.nav-links a:hover {
+  color: #333;
+  background-color: #fff;
+}
+
+.nav-links a:active {
+  color:#333;
+  background-color: #B2BEB5;
+}
+
 .page-title {
   font-weight: lighter;
   margin: 0 10;
