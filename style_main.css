@@ -14,11 +14,11 @@ header {
 nav {
   margin: 0;
   padding: 5px 0;
-  color: #fff
 }
 
 .nav-bar {
   display: inline-block;
+  color: #fff
 }
 
 .nav-links {
