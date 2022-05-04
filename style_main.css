@@ -31,16 +31,20 @@ nav {
 
 .nav-links a {
   cursor: pointer;
+  color:#fff;
+  text-decoration: none;
 }
 
 .nav-links a:hover {
   color: #333;
   background-color: #fff;
+  text-decoration: none;
 }
 
 .nav-links a:active {
   color:#333;
   background-color: #B2BEB5;
+  text-decoration: none;
 }
 
 .page-title {
