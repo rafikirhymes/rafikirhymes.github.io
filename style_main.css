@@ -55,5 +55,10 @@ nav {
 
 main {
   position: relative;
-  top: 160;
+  top: 125;
+}
+
+.main-heading {
+  font-size: 45px;
+  margin: 0 20;
 }
