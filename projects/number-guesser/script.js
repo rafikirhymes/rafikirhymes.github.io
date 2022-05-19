@@ -11,7 +11,7 @@ const compareGuesses = (userGuess, computerGuess, targetNumber) => {
     if ((userGuess > 9) || (userGuess < 0)) {
         alert('Your guess should be between 0-9!');
     } else {
-        getAbsoluteDistance(userGuess, targetNumber) <= getAbsoluteDistance(computerGuess, targetNumber);
+        return getAbsoluteDistance(userGuess, targetNumber) <= getAbsoluteDistance(computerGuess, targetNumber);
     }
 }
 
