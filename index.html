@@ -1,67 +1,65 @@
 <html>
     <head>
         <title>Rafiki Rhymes</title>
-        <link rel='preconnect' href='https://fonts.googleapis.com'>
-        <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
-        <link href='https://fonts.googleapis.com/css2?family=Koulen&display=swap' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Koulen&display=swap" rel="stylesheet">
         <link href='./style_main.css' rel='stylesheet' type='text/css'>
       </head>
 
     <body>
+
         <header>
-            <nav>
-                <h1>Rafiki Rhymes</h1>
-                <ul>
-                    <li id='home-nav'>Home</li>
-                    <li id='about-me-nav'>About Me</li>
-                    <li id='projects-nav'>Projects</li>
-                </ul>
-            </nav>
+          <nav>
+              <h1>Rafiki Rhymes</h1>
+              <ul>
+                  <li id='home-nav'>Home</li>
+                  <li id='about-me-nav'>About Me</li>
+                  <li id='projects-nav'>Projects</li>
+              </ul>
+          </nav>
         </header>
+
         <main>
-            <section id='home-section'>
+
+          <article id='home-article'>
+            <div class='article-contents'>
+
+              <section class='article-text'>
+                <h2>Welcome</h2>
+                <p>Is this what you were looking for?</p>
+              </section>
+
               <figure>
                 <img src='https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif' />
+                <figcaption>new page, who dis?</figcaption>
               </figure>
-              <figure>
-                <figcaption>New page, who dis?</figcaption>
-              </figure>
-            </section>
-            <section id='about-me-section' hidden>
-                <p>lemme tell you a little about me</p>
-            </section>
-            <section id='projects-section' hidden>
-                <p>these are my projects</p>
-            </section>
+
+            </div>              
+          </article>
+
+          <article id='about-me-article' hidden>
+            <div class='article-contents'>
+
+              <p>lemme tell you a little about me</p>
+
+            </div>
+          </article>
+
+          <article id='projects-article' hidden>
+            <div class='article-contents'>
+
+              <p>these are my projects</p>
+
+            </div>
+          </article>
         </main>
-        <script>
-            const homeNav = document.getElementById('home-nav')
-            const aboutMeNav = document.getElementById('about-me-nav')
-            const projectsNav = document.getElementById('projects-nav')
 
+        <footer>
 
-            const homeSection = document.getElementById('home-section')
-            const aboutMeSection = document.getElementById('about-me-section')
-            const projectsSection = document.getElementById('projects-section')
+        </footer>
 
-            homeNav.onclick = () => {
-                homeSection.hidden=false;
-                aboutMeSection.hidden=true;
-                projectsSection.hidden=true;
-            }
+        <script src="./main.js"></script>
 
-            aboutMeNav.onclick = () => {
-                homeSection.hidden=true;
-                aboutMeSection.hidden=false;
-                projectsSection.hidden=true;
-            }
-
-            projectsNav.onclick = () => {
-                homeSection.hidden=true;
-                aboutMeSection.hidden=true;
-                projectsSection.hidden=false;
-            }
-
-        </script>
     </body>
 </html>
