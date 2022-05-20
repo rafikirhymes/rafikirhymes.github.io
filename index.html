@@ -1,35 +1,67 @@
 <html>
+    <head>
+        <title>Rafiki Rhymes</title>
+        <link rel='preconnect' href='https://fonts.googleapis.com'>
+        <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+        <link href='https://fonts.googleapis.com/css2?family=Koulen&display=swap' rel='stylesheet'>
+        <link href='./style_main.css' rel='stylesheet' type='text/css'>
+      </head>
 
-<head>
-  <title>Rafiki Rhymes</title>
-  <link rel='preconnect' href='https://fonts.googleapis.com'>
-  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
-  <link href='https://fonts.googleapis.com/css2?family=Koulen&display=swap' rel='stylesheet'>
-  <link href='./style_main.css' rel='stylesheet' type='text/css'>
-</head>
+    <body>
+        <header>
+            <nav>
+                <h1>Rafiki Rhymes</h1>
+                <ul>
+                    <li id='home-nav'>Home</li>
+                    <li id='about-me-nav'>About Me</li>
+                    <li id='projects-nav'>Projects</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id='home-section'>
+              <figure>
+                <img src='https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif' />
+              </figure>
+              <figure>
+                <figcaption>New page, who dis?</figcaption>
+              </figure>
+            </section>
+            <section id='about-me-section' hidden>
+                <p>lemme tell you a little about me</p>
+            </section>
+            <section id='projects-section' hidden>
+                <p>these are my projects</p>
+            </section>
+        </main>
+        <script>
+            const homeNav = document.getElementById('home-nav')
+            const aboutMeNav = document.getElementById('about-me-nav')
+            const projectsNav = document.getElementById('projects-nav')
 
-<body>
 
-  <header>
-    <nav>
-      <h1 class='nav-bar page-title'>Rafiki Rhymes</h1>
-      <ul class='nav-bar'>
-        <li class='nav-bar nav-links'><a href='index'>Home</a></li>
-        <li class='nav-bar nav-links'><a href='about-me'>About Me</a></li>
-        <li class='nav-bar nav-links'><a href='projects'>Projects</a></li>
-      </ul>
-    </nav>
-  </header>
+            const homeSection = document.getElementById('home-section')
+            const aboutMeSection = document.getElementById('about-me-section')
+            const projectsSection = document.getElementById('projects-section')
 
-  <main>
-    <figure>
-      <img src='https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif' />
-    </figure>
-    <figure>
-      <figcaption>New page, who dis?</figcaption>
-    </figure>
-  </main>
+            homeNav.onclick = () => {
+                homeSection.hidden=false;
+                aboutMeSection.hidden=true;
+                projectsSection.hidden=true;
+            }
 
-</body>
+            aboutMeNav.onclick = () => {
+                homeSection.hidden=true;
+                aboutMeSection.hidden=false;
+                projectsSection.hidden=true;
+            }
 
+            projectsNav.onclick = () => {
+                homeSection.hidden=true;
+                aboutMeSection.hidden=true;
+                projectsSection.hidden=false;
+            }
+
+        </script>
+    </body>
 </html>
